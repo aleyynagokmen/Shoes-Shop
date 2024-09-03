@@ -1,0 +1,222 @@
+body,
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Twentieth Century", sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+/* head  */
+#title {
+    position: sticky;
+    top: 0;
+    display: block;
+    text-align: center;
+    padding-top: 2.08vh;
+    padding-bottom: 0.52vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.23vw;
+    z-index: 10;
+
+}
+
+.shoesShop {
+    font-size: 2.60vh;
+    font-weight: 100;
+    font-family: "Twentieth Century", sans-serif;
+}
+
+/* links */
+#nav {
+    position: sticky;
+    margin-top: 0;
+    top: 6.25vh;
+    z-index: 1000;
+}
+
+.link.active {
+    color: #fff;
+    font-size: 1.70vh;
+    background-color: #274647;
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    padding-bottom: 1.56vh;
+}
+
+.nav-bar a {
+    color: #fff;
+    font-size: 1.50vh;
+    margin: 0 2.08vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav-bar a:hover {
+    transition: border-bottom 0.2s ease-in;
+}
+
+/* page info */
+#info {
+    display: block;
+    text-align: center;
+}
+
+.getInfo {
+    display: inline-block;
+    font-size: 3vh;
+    padding-top: 4.17vh;
+    letter-spacing: 0.05vw;
+}
+
+.infoContent {
+    font-size: 1.70vh;
+    line-height: 1.5;
+
+}
+
+/* filter */
+
+.filter {
+    position: absolute;
+}
+
+.filter-content {
+    display: none;
+}
+
+.filter-content.show {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.66vh;
+    font-weight: 200;
+}
+
+label input {
+    display: inline-block;
+    margin-bottom: 1.04vh;
+}
+
+.filterMenu {
+    margin: 5.21vh 5.21vh;
+    border-bottom: 1px solid grey;
+}
+
+.filterMenu button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+    padding-right: 10.42vw;
+    font-size: 1.85vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.filterMenu button i {
+    position: absolute;
+    padding-left: 0.52vh;
+    right: 0;
+}
+
+/* products */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 2.08vh 5.21vh;
+    width: 70%;
+    left: 25.10vw;
+    height: auto;
+    gap: 0.1vh;
+}
+
+.product {
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6.25vh;
+}
+
+.pro-name,
+.pro-price {
+    font-size: 1.66vh;
+    letter-spacing: 0.04vw;
+    font-family: "Twentieth Century", sans-serif;
+    margin-top: 0.63vh;
+    font-weight: 200;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 2.08vh;
+    position: fixed;
+}
+
+.social {
+    display: inline-flex;
+    font-size: 2.92vh;
+    margin: 0;
+}
+
+.social i {
+    color: #fff;
+    transition: 1s ease-in-out;
+}
+
+.social i:hover {
+    color: grey;
+}
+
+
+@media (max-width: 1090px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2vh 5vh;
+    }
+}
+
+@media(max-width:780px) {
+
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1.8vh 4.8vh;
+    }
+}

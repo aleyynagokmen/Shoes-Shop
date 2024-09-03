@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Shoes Shop</title>
+</head>
+
+
+<body>
+    <!-- başlık kısmı -->
+    <header>
+        <div id="title">
+            <span class="shoesShop">
+                Shoes Shop
+            </span>
+        </div>
+
+
+        <!-- linkler -->
+        <nav id="nav">
+            <div class="nav-bar" style="width: 100%;">
+                <p><a onclick="redirectPage(this)" class="link" href="index.html" data-title="Yeni Gelenler"
+                        data-content=" Shoes Shop Yeni Gelenler koleksiyonu ile rahatlık ve şıklık her adımda sizinle. Trend
+                        kadın sneaker, babet, topuklu ayakkabı ve daha fazlasıyla tarzınızı tamamlayın">Yeni
+                        Gelenler</a></p>
+                <p><a class="link" href="ayakkabi.html" data-title="Ayakkabı"
+                        data-content="Shoes Shop Ayakkabı kategorisindeki tüm ürünlerle tarzınızı yansıtın. Kadınlar için trend, rahat ve şık seçenekler sunuyoruz. Her adımda fark yaratın!">Ayakkabı</a>
+                </p>
+                <p><a class="link" href="canta.html" data-title="Çanta"
+                        data-content="Shoes Shop Çanta Koleksiyonu, kadınlar için şıklık ve işlevsellik sunar. Modern, geniş iç hacimli omuz ve el çantalarıyla tarzınızı tamamlayın.">Çanta</a>
+                </p>
+                <p><a class="link" href="cok-satanlar.html" data-title="Çok Satanlar"
+                        data-content="Shoes Shop Çok Satanlar kategorisi ile stil sahibi ve rahat ayakkabıları keşfedin. En popüler modellerimizle modanın nabzını tutun, her adımda şıklık ve konforu yakalayın.">Çok
+                        Satanlar</a></p>
+                <p><a class="link" href="indirim-firsatlari.html" data-title="Indirim Fırsatları"
+                        data-content="Shoes Shop İndirim Fırsatları ile modaya uygun ayakkabıları cazip fiyatlarla keşfedin. Şıklık ve konforu uygun fiyatlarla yakalayın">İndirim
+                        Fırsatları</a></p>
+            </div>
+        </nav>
+    </header>
+
+    <!-- sayfa bilgileri -->
+    <div id="info">
+        <span class="getInfo">YENİ GELENLER</span>
+        <p class="infoContent"><i> Shoes Shop Yeni Gelenler koleksiyonu ile rahatlık ve şıklık her adımda sizinle. Trend
+                kadın sneaker, babet, topuklu ayakkabı ve daha fazlasıyla tarzınızı tamamlayın.</i></p>
+
+    </div>
+
+    <br>
+    <hr>
+
+    <!-- filtreleme -->
+    <div class="filter">
+        <div class="filterMenu">
+            <button onclick="toggleDropdown('filterContent1')">Ürün Kategorisi <i style="cursor: pointer;"
+                    class="fa-solid fa-chevron-down"></i></button>
+            <div id="filterContent1" class="filter-content">
+                <label>
+                    <input type="radio" name="filter" value="option1">ABİYE AYAKKABI
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option2">EL ÇANTASI
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option3">GÜNLÜK ÇİZME
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option4">GÜNLÜK BOT
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option5">KAR TOPU
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option6">TOPUKLU BOT
+                </label><br>
+            </div>
+        </div>
+
+        <div class="filterMenu">
+            <button onclick="toggleDropdown('filterContent2')">Beden <i style="cursor: pointer;"
+                    class="fa-solid fa-chevron-down"></i></button>
+            <div id="filterContent2" class="filter-content">
+                <label>
+                    <input type="radio" name="filter" value="option1">35
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option2">36
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option3">37
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option4">38
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option5">39
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option6">40
+                </label><br>
+            </div>
+        </div>
+
+        <div class="filterMenu">
+            <button onclick="toggleDropdown('filterContent3')">Renk <i style="cursor: pointer;"
+                    class="fa-solid fa-chevron-down"></i></button>
+            <div id="filterContent3" class="filter-content">
+                <label>
+                    <input type="radio" name="filter" value="option1">SİYAH
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option2">BEYAZ
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option3">KIRMIZI
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option4">KAHVE
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option5">MAVİ
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option6">MOR
+                </label><br>
+            </div>
+        </div>
+
+        <div class="filterMenu">
+            <button onclick="toggleDropdown('filterContent4')">Topuk Boyu <i style="cursor: pointer;"
+                    class="fa-solid fa-chevron-down"></i></button>
+            <div id="filterContent4" class="filter-content">
+                <label>
+                    <input type="radio" name="filter" value="option1">1 cm
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option2">2 cm
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option3">3 cm
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option4">4 cm
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option5">7 cm
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option6">12 cm
+                </label><br>
+            </div>
+        </div>
+
+        <div class="filterMenu">
+            <button onclick="toggleDropdown('filterContent5')">Materyal <i style="cursor: pointer;"
+                    class="fa-solid fa-chevron-down"></i></button>
+            <div id="filterContent5" class="filter-content">
+                <label>
+                    <input type="radio" name="filter" value="option1">% 100 Deri
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option2">Hasır
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option3">Keten
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option4">Poliüretan
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option5">Tekstil
+                </label><br>
+            </div>
+        </div>
+
+        <div class="filterMenu">
+            <button onclick="toggleDropdown('filterContent6')">Ortam <i style="cursor: pointer;"
+                    class="fa-solid fa-chevron-down"></i></button>
+            <div id="filterContent6" class="filter-content">
+                <label>
+                    <input type="radio" name="filter" value="option1">Parti
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option2">Günlük
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option4">Yürüyüş
+                </label><br>
+            </div>
+        </div>
+
+        <div class="filterMenu">
+            <button onclick="toggleDropdown('filterContent7')">Topuk Tipi <i style="cursor: pointer;"
+                    class="fa-solid fa-chevron-down"></i></button>
+            <div id="filterContent7" class="filter-content">
+                <label>
+                    <input type="radio" name="filter" value="option1">Düz Topuk
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option2">İnce Topuk
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option3">Kalın Topuk
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option4">Orta Topuk
+                </label><br>
+            </div>
+        </div>
+        <div class="filterMenu">
+            <button onclick="toggleDropdown('filterContent8')">Aksesuar <i style="cursor: pointer;"
+                    class="fa-solid fa-chevron-down"></i></button>
+            <div id="filterContent8" class="filter-content">
+                <label>
+                    <input type="radio" name="filter" value="option1">Tokalı
+                </label><br>
+                <label>
+                    <input type="radio" name="filter" value="option2">Tokasız
+                </label><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- ürünler -->
+    <section id="products" class="products">
+
+        <div class="product">
+            <img class="image" style="width: 250px; height: 370px; "
+                src="img/1.seçenek/marjin-kadin-dikis-detayli-yandan-fermuarli-topuklu-bot-fortap_1.jpg" alt="ürün1">
+            <span class="pro-name">Kadın Topuklu Bot Fortap - Siyah</span>
+            <span class="pro-price">1,499.99TL</span>
+        </div>
+
+        <div class="product">
+            <img class="image" style="width: 250px; height: 370px; "
+                src="img/2.seçenek/marjin-kadin-kalin-topuk-fermuarsiz-topuklu-bot-monset_1_9fc5d0cf-ed28-4226-a8c6-2acabb49b93b (1).jpg"
+                alt="ürün1">
+
+            <span class="pro-name">Kadın Kalın Topuklu Bot Tasim - Siyah</span>
+            <span class="pro-price">1,399.00TL</span>
+        </div>
+
+        <div class="product">
+            <img class="image" style="width: 250px; height: 370px; "
+                src="img/3.seçenek/marjin-kadin-fiyonk-detayli-katlanabilir-babet-linsar_1_d740d358-479b-4ec4-abf9-6407b2b35b8a.jpg"
+                alt="ürün1">
+            <span class="pro-name">Kadın Kalın Çizme Monset - Siyah</span>
+            <span class="pro-price">1,519.99TL</span>
+        </div>
+
+        <div class="product">
+            <img class="image" style="width: 250px; height: 370px; " src="img/4.seçenek/3703667064145-1.jpg"
+                alt="ürün1">
+
+            <span class="pro-name">Kadın Topuklu Çizme Monset - Siyah</span>
+            <span class="pro-price">1,499.99TL</span>
+        </div>
+
+        <div class="product">
+            <img class="image" style="width: 250px; height: 370px; "
+                src="img/5.seçenek/marjin-kadin-sneaker-kontrast-tabanli-retro-spor-ayakkabi-lorves_2.jpg" alt="ürün1">
+            <span class="pro-name">Kadın Sneaker Spor Ayakkabı - Kahve</span>
+            <span class="pro-price">1,119.99TL</span>
+        </div>
+
+        <div class="product">
+            <img class="image" style="width: 250px; height: 370px; "
+                src="img/6.seçenek/marjin-kadin-kalin-topuk-fermuarsiz-topuklu-bot-monset_1.jpg" alt="ürün1">
+            <span class="pro-name">Kadın Günlük Bot Sonate - Siyah</span>
+            <span class="pro-price">1,519.99TL</span>
+        </div>
+
+        <div class="product">
+            <img class="image" style="width: 250px; height: 370px; "
+                src="img/7.seçenek/marjin-kadin-kut-burunlu-tasli-bantli-abiye-topuklu-ayakkabi-pakra_1_724f42b8-03fd-434a-834b-5e1ea471a3ac.jpg"
+                alt="ürün1">
+            <span class="pro-name">Kadın Topuklu Bot Lokas - Siyah</span>
+            <span class="pro-price">1,749.99TL</span>
+        </div>
+
+        <div class="product">
+            <img class="image" style="width: 250px; height: 370px; "
+                src="img/8.seçenek/marjin-kadin-sivri-burun-arkasi-acik-topuklu-stiletto-kavter_1_8d7cd2a5-d8e9-4796-8c7d-aaeaf1b8f31c.jpg"
+                alt="ürün1">
+            <span class="pro-name">Kadın Topuklu Bot Fortap - Siyah</span>
+            <span class="pro-price">799.99TL</span>
+        </div>
+
+        <div class="product">
+            <img class="image" style="width: 250px; height: 370px; "
+                src="img/9.seçenek/524533-kadin-stiletto-topuklu-ayakkabi-loresta-leopar-renk-marjin-kadin-stiletto-sivri-burun-ince-topuklu-ayakkabi-loresta-1.jpg">
+            <span class="pro-name">Kadın Topuklu Stiletto - Siyah</span>
+            <span class="pro-price">1,699.99TL</span>
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+        <span class="social">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </span>
+        <span class="social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </span>
+        <span class="social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </span>
+        <span class="social">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </span>
+    </footer>
+
+
+
+
+    <script src=" index.js">
+    </script>
+</body>
+
+</html>
